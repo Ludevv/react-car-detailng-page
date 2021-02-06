@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.scss';
+import StoreProvider from './store/StoreProvider'
 
 const App = () => ( 
-    <div>Cześć!</div>
+    <StoreProvider>
+        <div>Cześć!</div>
+    </StoreProvider>
+    
  );
 
  
