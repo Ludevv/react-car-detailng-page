@@ -1,16 +1,30 @@
-import React, { createContext, useEffect } from 'react';
-
+import React, { createContext, useEffect, useState } from 'react';
+import request from '../helpers/request';
 
 export const StoreContext = createContext(null);
 
 const StoreProvider = ({children}) => {
-    const [items, setItems] = useState([]);
+    const [cars, setCars] = useState([]);
+    const [user, setUser] = useState(null);
+
+    
+
+    const fetchData = async () => {
+        const {data} = await request.get('/cars'); //EDIT NA CARS
+        setCars(data.cars);
+    };
+
+    useEffect(()=> {
+        fetchData();
+    }, []);
 
     return(
-        <StoreContext.Provider value={
-            items,
-            setItems
-        }>
+        <StoreContext.Provider value={{
+            cars,
+            setCars,
+            user,
+            setUser
+        }}>
             {children}
         </StoreContext.Provider>
     )

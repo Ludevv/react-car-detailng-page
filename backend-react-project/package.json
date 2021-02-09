@@ -1,7 +1,7 @@
 {
   "name": "backend-react-project",
   "version": "1.0.0",
-  "description": "Mini backend for course React od podstaw on Udemy",
+  "description": "Mini backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
