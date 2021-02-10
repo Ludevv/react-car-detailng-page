@@ -2,7 +2,10 @@ import React, { useContext } from 'react';
 import bemCssModules from 'bem-css-modules'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Cars from '../Cars/Cars'
-import UserCars from '../UserCars/UserCars'
+import Main from '../Main/Main'
+import Prices from '../Prices/Prices'
+import Contact from '../Contact/Contact'
+// import UserCars from '../UserCars/UserCars'
 import AdminPanel from '../AdminPanel/AdminPanel'
 
 import { default as ContentStyles} from './Content.module.scss'
@@ -20,8 +23,10 @@ const Content = () => {
   return ( 
     <main className={style()}>
       <Switch>
-        <Route exact path="/" render={()=> <Cars/>}/>
-        {isUserLogged && <Route exact path="/my-cars" render={()=> <UserCars/>}/>}
+        <Route exact path="/" render={()=> <Main/>}/>
+        <Route exact path="/realizacje" render={()=> <Cars/>}/>
+        <Route exact path="/cennik" render={()=> <Prices/>}/>
+        <Route exact path="/kontakt" render={()=> <Contact/>}/>
         {isAdmin && <Route exact path="/manage-cars" render={()=> <AdminPanel/>}/>}
         <Redirect to="/"/>
       </Switch>

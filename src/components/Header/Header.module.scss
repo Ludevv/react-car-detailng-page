@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap');
-
-.header { 
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,22 +11,85 @@
     z-index: 10;
 
     &__logo-wrapper {
-        margin-top: 0px;
+        margin-top: 2px;
         width: 80px;
-        height: 80px;
-        background-image: url("https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/138975616_124468519517278_1351774100529238675_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=wtSkkfjRcxcAX_UTolU&_nc_ht=scontent-frt3-2.xx&oh=a37f7f8b2cf21cb1c3f21f5667f06703&oe=60482D86");
+        height: 76px;
+        background-image: url("https://i.ibb.co/kB71Xwn/logo.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    &__title{
-        margin-left: 20px;
+    &__title {
+        display: inline;
         align-self: center;
-        flex-grow: 1;
         color: #fff;
-        font-weight: 300;
-        letter-spacing: 1px;
-        font-family: 'Spartan', sans-serif;
+        text-align: center;
+        z-index: 2;
     }
+
+    // &__underline {
+    //     position: absolute;
+    //     top: 40px;
+    //     left: 78px;
+    //     height: 11px;
+    //     width: 0px;
+    //     background-color: rgb(62, 42, 153);
+    //     animation: underlineTitle 3s 1s forwards;
+    // }
+
+    // @keyframes underlineTitle {
+    //     0% {
+    //         width: 0px;
+    //     }
+
+    //     100% {
+    //         width: 360px;
+    //     }
+    // }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        margin: 0 10px 0 auto;
+
+    }
+
+    &__item {
+        line-height: 85px;
+        margin: 0 20px;
+
+    }
+
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__link:hover {
+        color: #bbb;
+    }
+
+    &__button {
+        margin: 22.5px 22.5px 22.5px 10px;
+        font-family: 'Rubik', sans-serif;
+        display: block;
+        height: 40px;
+        width: 130px;
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: .3s;
+    }
+
+    &__button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
 }

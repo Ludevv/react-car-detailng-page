@@ -124,8 +124,8 @@ const CarPopup = ({
           <div className={style('form-row')}>
             <label>
               Opis:
-              <input 
-              className={style('input')} 
+              <textarea 
+              className={style('inputDescrible')} 
               type="text" 
               value={formDescrible}
               onChange={handleOnChagneDescrible}
@@ -134,11 +134,8 @@ const CarPopup = ({
             </label>
           </div>
 
-         
-         
-
-          <button type="submit">{correctLabel}</button>
-          <button onClick={hidePopup} type="button">Anuluj</button>
+          <button className={style('button')}  type="submit">{correctLabel}</button>
+          <button className={style('button')} onClick={hidePopup} type="button">Anuluj</button>
         </form>
       </div>
     </Modal>

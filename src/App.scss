@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +10,61 @@
     margin-top: 60px;
     min-height: calc(100vh - 60px);
     display: flex;
+}
+
+h1 {
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    transition: .3s;
+}
+
+button {
+    display: block;
+    height: 40px;
+    width: 130px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .3s;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+// i::before {
+//     color: #fff;
+//     line-height: 85px;
+//     font-size: 22px;
+//     margin-right: 20px;
+// }
+
+label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
 }

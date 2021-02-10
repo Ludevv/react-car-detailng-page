@@ -1,7 +1,10 @@
 import React, {useContext, useState} from 'react';
 import request from '../../../helpers/request';
+import bemCssModules from 'bem-css-modules'
 import { StoreContext } from '../../../store/StoreProvider';
 import CarPopup from './CarPopup';
+import {default as CarDetailsStyles} from './CarDetails.module.scss'
+const style = bemCssModules(CarDetailsStyles);
 
 const CarDetails = (props) => {
   const [isOpenPopup, setIsOpenPopup] = useState(false)
@@ -32,12 +35,15 @@ const CarDetails = (props) => {
   }
 
   return ( 
-    <details>
-      <summary>{title}</summary>
-      <button onClick={showPopup}>Edytuj</button>
-      <button onClick={handleDeleteCar}>Usuń</button>
+    <>
+    <details className={style()}>
+      <summary className={style("item")}>{title}</summary>
+      <button className={style("button")} onClick={showPopup}>Edytuj</button>
+      <button className={style("button")} onClick={handleDeleteCar}>Usuń</button>
       <CarPopup hidePopup={hidePopup} isOpenPopup={isOpenPopup} {...props}/>
     </details>
+    
+    </>
    );
 }
  

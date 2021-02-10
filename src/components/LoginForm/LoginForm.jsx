@@ -58,21 +58,21 @@ const LoginForm = ({handleOnClose, isModalOpen}) => {
             <form className={style()} method="post" onSubmit={handleOnSubmit}>
                 <div className={style('row')}>
                     <label>
-                        Login:
-                        <input onChange={handleOnChangeLogin} type="text" value={login}>
+                        Login:{" "}
+                        <input className={style('input')} onChange={handleOnChangeLogin} type="text" value={login}>
                         </input>
                     </label>
                 </div>
                 <div className={style('row')}>
                 <label>
-                    Hasło:
-                        <input onChange={handleOnChangePassword} type="password" value={password}>
+                    Hasło:{" "}
+                        <input className={style('input')} onChange={handleOnChangePassword} type="password" value={password}>
                         </input>
                     </label>
                 </div>
                 <div className={style('row')}>
-                    <button type="submit">Zaloguj</button>
-                    <button onClick={handleOnCloseModal} type="button">Anuluj</button>
+                    <button className={style('button')} type="submit">Zaloguj</button>
+                    <button className={style('button')} onClick={handleOnCloseModal} type="button">Anuluj</button>
                 </div>
             </form>
         </Modal>
