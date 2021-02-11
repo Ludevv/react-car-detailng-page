@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 * {
     margin: 0;
@@ -10,27 +13,28 @@
     margin-top: 60px;
     min-height: calc(100vh - 60px);
     display: flex;
+    background-color: #222;
 }
 
 h1 {
 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 1.5px;
     font-weight: 300;
-    text-transform: uppercase;
+
 }
 
 p {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     transition: .3s;
 }
@@ -65,6 +69,6 @@ button:hover {
 // }
 
 label {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }

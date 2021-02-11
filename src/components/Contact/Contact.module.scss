@@ -1,6 +1,66 @@
 .contact {
+  position: relative;
+  margin-top: -15px;
+  margin-bottom: -40px;
+  width: 100%;
+  background-image: url("https://iv.pl/images/4502e4d995c37e45a21cee73f6d75187.png");
+  height: 850px;
+  background-position: 58% 100%;
 
-  &__title {
-    color: yellowgreen;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+
+  }
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    height: 500px;
+    width: 380px;
+    padding: 40px;
+    background-color: rgba(62, 42, 153, 0.8);
+  }
+
+  h5 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #bbb;
+  }
+
+  i {
+    font-size: 30px;
+    margin-right: 20px;
+    transition: .2s;
+  }
+
+  .fa-facebook:hover,
+  .fa-instagram:hover {
+    color: #bbb
   }
 }

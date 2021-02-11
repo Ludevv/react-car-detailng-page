@@ -1,6 +1,26 @@
 .prices {
 
+  font-family: 'Mulish', sans-serif;
+
   &__title {
-    color: rebeccapurple;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Mulish', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
   }
+
+  &__show-box {
+    width: 70%;
+    margin: -25px auto 15px auto;
+    padding: 11px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 3px solid rgb(5, 90, 187);
+    border-radius: 8px;
+  }
+
+
 }
