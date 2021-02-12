@@ -1,8 +1,8 @@
-const { v4: uuid } = require("uuid");
+// const { v4: uuid } = require("uuid");
 
 const carsData = [
   {
-    id: uuid(),
+    id: 0,
     img: "https://iv.pl/images/9eaf155188c08444c34ff16519448f32.jpg",
     date: "2020-01-24",
     describle:
@@ -10,7 +10,7 @@ const carsData = [
     title: "Ford Focus RS",
   },
   {
-    id: uuid(),
+    id: 1,
     img:
       "https://i.wpimg.pl/730x0/m.autokult.pl/ford-mustang-mach-1-2021-a689162.jpg",
     date: "2020-05-15",
@@ -19,7 +19,7 @@ const carsData = [
     title: "Ford Mustang",
   },
   {
-    id: uuid(),
+    id: 2,
     img:
       "https://maxtondesign.pl/pol_pl_Splitter-Przedni-VW-Golf-7-R-Polift-V-3-965_2.jpg",
     date: "2020-07-30",
@@ -28,7 +28,7 @@ const carsData = [
     title: "VW Golf R",
   },
   {
-    id: uuid(),
+    id: 3,
     img:
       "https://www.tuningblog.eu/wp-content/uploads/2019/09/BB-VW-Golf-VII-GTI-TCR-Tuning-2019-3.jpg",
     date: "2020-12-04",
@@ -37,7 +37,7 @@ const carsData = [
     title: "VW Golf GTI",
   },
   {
-    id: uuid(),
+    id: 4,
     img:
       "https://m.autokult.pl/g5r4trgf-993bb6fc88caa6666a33520,910,500,0,0.jpg",
     date: "2021-01-24",
@@ -46,6 +46,8 @@ const carsData = [
     title: "Seat Cupra",
   },
 ];
+
+
 
 exports.getCars = (request, response, next) => {
   try {
@@ -112,7 +114,7 @@ exports.postCar = (request, response, next) => {
     const newCar = {
       // authors: authors,
       describle,
-      id: uuid(),
+      id: carsData.length,
       img,
       date,
       title,

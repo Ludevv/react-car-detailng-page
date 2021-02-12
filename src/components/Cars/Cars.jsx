@@ -9,12 +9,14 @@ import { StoreContext } from '../../store/StoreProvider';
 
 const style = bemCssModules(CarsStyles)
 
+
 const Cars = () => {
 
   const {cars} = useContext(StoreContext);
 
 
   const carsElements = cars.map(car => <Car key={car.id} {...car}/>)
+
 
   return ( 
     <section className={style()}>

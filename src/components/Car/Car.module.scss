@@ -1,25 +1,96 @@
 .car-card {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   // flex-direction: column;
-  background-color: #666;
-  border-radius: 5px;
+  background-color: #000;
+  border-radius: 20px;
   list-style: none;
+  position: relative;
+  height: 400px;
+  color: white;
 
+  &__boxEven {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+  }
 
-  &__title {
+  &__titleEven {
     text-align: center;
     margin-bottom: 10px;
   }
 
-  &__image {
-    width: 100%;
-    height: auto;
-
+  &__imageBoxEven {
+    background-position: center bottom;
+    background-size: cover;
+    background-color: red;
+    flex-basis: 60%;
   }
 
-  &__price,
-  &__describle {
+  &__triangleOdd {
+    position: absolute;
+    top: 0;
+    right: 40%;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    border-top: 400px solid #000;
+    border-left: 100px solid transparent;
+  }
+
+  &__triangleEven {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 400px solid #000;
+    border-right: 100px solid transparent;
+  }
+
+  // &__imageEven {
+  //   display: block;
+  //   width: 100%;
+  //   height: auto;
+  //   overflow: hidden;
+  // }
+
+  &__priceEven,
+  &__describleEven {
+    margin: 10px 15px 0 15px;
+    text-align: justify;
+  }
+
+
+  &__boxOdd {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+  }
+
+
+  &__titleOdd {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__imageBoxOdd {
+    background-position: center bottom;
+    background-size: cover;
+    background-color: yellow;
+    flex-basis: 60%;
+  }
+
+  // &__imageOdd {
+  //   display: block;
+  //   width: 100%;
+  //   height: auto;
+  //   overflow: hidden;
+  // }
+
+  &__priceOdd,
+  &__describleOdd {
     margin: 10px 15px 0 15px;
     text-align: justify;
   }
