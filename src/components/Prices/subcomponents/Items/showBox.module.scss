@@ -1,0 +1,31 @@
+.show-box {
+
+  width: 70%;
+  margin: -25px auto 15px auto;
+  padding: 11px 20px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+
+  &__star {
+    margin-top: 25px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #fff;
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    li {
+      margin-left: 20px;
+      margin-bottom: 2px;
+    }
+  }
+
+
+}

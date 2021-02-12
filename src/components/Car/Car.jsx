@@ -15,36 +15,13 @@ const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
 
   const isUserLogged = Boolean(user);
 
-  // const handleOnClick = async () => {
-  //   try{
-  //     const {data, status} = await request.patch(
-  //       '/users',
-  //     {
-  //       login: user.login,
-  //       carId: id,
-  //     }
-  //     );
-
-  //   if(status === 202 ) {
-  //     setUser(data.user);
-  //     history.push('/my-cars')
-  //   }
-  //   } catch (error) {
-  //     console.warn(error);
-  //   }
-  // }
-
-
-
   return ( 
     <li>
     <article className={style()}>
       <h3 className={style('title')}>{title}</h3>
-      <img src={img} alt={title} className={style('image')}/>
       <p className={style('price')}>{`Data realizacji: ${date}`}</p>
       <p className={style('describle')}>{describle}</p>
-      {/* <p className={style('authors')}>{`Autorzy: ${allAuthors}`}</p> */}
-      {/* {shouldBeBuyButtonVisible && <button onClick={handleOnClick}>Zakup ten kurs</button>} */}
+      <img src={img} alt={title} className={style('image')}/>
     </article>
     </li>
    );

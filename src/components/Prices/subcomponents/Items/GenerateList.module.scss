@@ -1,0 +1,25 @@
+.generateList {
+  display: flex;
+  margin-bottom: 8px;
+  margin-top: 10px;
+
+  &__name,
+  &__time,
+  &__price {
+    margin-top: 10px;
+  }
+
+  &__name {
+    flex-basis: 80%;
+    margin-right: 20px
+  }
+
+  &__time {
+    flex-basis: 10%;
+  }
+
+  &__price {
+    flex-basis: 10%;
+  }
+
+}

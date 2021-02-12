@@ -3,7 +3,7 @@ const { v4: uuid } = require("uuid");
 const carsData = [
   {
     id: uuid(),
-    img: "https://zeperfs.com/photos/5869-f.jpg",
+    img: "https://iv.pl/images/9eaf155188c08444c34ff16519448f32.jpg",
     date: "2020-01-24",
     describle:
       "Zabezpieczamy lakier specjalną powłoką ceramiczną OptiCoat. Dzięki temu nie tylko świetnie wygląda, ale jest także odporny na uszkodzenia. Zobacz, jak lśnią auta, którymi do tej pory się zajęliśmy.",
