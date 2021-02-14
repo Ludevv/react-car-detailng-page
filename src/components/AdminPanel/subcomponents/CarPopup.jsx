@@ -13,13 +13,14 @@ const CarPopup = ({
   isEditMode = true,
   isOpenPopup,
   id,
-  img = '',
+  imgs = [],
   describle = '',
   date = new Date().toISOString().slice(0, 10),
   title = '',
 }) => {
   const [formDescrible, setFormDescrible] = useState(describle);
-  const [formImg, setFormImg] = useState(img);
+  const [formImgs, setFormImgs] = useState(imgs);
+  const [formImg, setFormImg] = useState('');
   const [formDate, setFormDate] = useState(date);
   const [formTitle, setFormTitle] = useState(title);
 
@@ -36,7 +37,7 @@ const CarPopup = ({
     const carObject = {
       describle: formDescrible,
       id,
-      img: formImg,
+      imgs: formImgs,
       date: formDate,
       title: formTitle,
     };
@@ -61,28 +62,28 @@ const CarPopup = ({
     hidePopup();
   }
 
-  // const addAuthor = (event) => {
-  //   event.preventDefault();
+  const addImg = (event) => {
+    event.preventDefault();
 
-  //   setFromAuthors(prev => [...prev, formAuthor])
-  //   setFormAuthor('') // BŁĄD????????????
-  // }
+    setFormImgs(prev => [...prev, formImg])
+    setFormImg('') // BŁĄD????????????
+  }
 
-  // const deleteAuthor = event => {
-  //   const authorToDelete = event.target.dataset.author;
-  //   setFromAuthors(prev => prev.filter(author => author !== authorToDelete))
-  // }
+  const deleteImg = event => {
+    const imgToDelete = event.target.dataset.img;
+    setFromImgs(prev => prev.filter(img => img !== imgToDelete))
+  }
 
-  // const authorsElements = formAuthors.map(author => (
-  //   <li key={author}>
-  //     <p>{author}</p>
-  //     <button data-author={author} onClick={deleteAuthor}>Usuń</button>
-  //   </li>
-  // ))
+  const imgsElements = formImgs.map(img => (
+    <li key={img}>
+      <p>{img}</p>
+      <button data-img={img} onClick={deleteImg}>Usuń</button>
+    </li>
+  ))
 
 
 
-  const correctLabel = isEditMode ? 'Aktualizuj kurs' : 'Utwórz kurs'
+  const correctLabel = isEditMode ? 'Aktualizuj auto' : 'Utwórz auto'
 
   return ( 
     <Modal handleOnClose={hidePopup} isOpen={isOpenPopup}>
@@ -108,6 +109,7 @@ const CarPopup = ({
               value={formImg}
               onChange={handleOnChagneImg}
               />
+              <button onClick={addImg}>Dodaj zdjęcie</button>
             </label>
           </div>
           <div className={style('form-row')}>
@@ -130,13 +132,17 @@ const CarPopup = ({
               value={formDescrible}
               onChange={handleOnChagneDescrible}
               />
-              {/* <button onClick={addAuthor}>Dodaj autora</button> */}
+              
             </label>
           </div>
 
           <button className={style('button')}  type="submit">{correctLabel}</button>
           <button className={style('button')} onClick={hidePopup} type="button">Anuluj</button>
         </form>
+        <p>Lista zdjęć:</p>
+        <ul>
+          {imgsElements}
+        </ul>
       </div>
     </Modal>
    );

@@ -8,22 +8,14 @@ import { useHistory } from 'react-router-dom';
 
 const style = bemCssModules(CarStyles)
 
-const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
+const Car = ({ id, imgs, isUserContext = false, date, describle, title}) => {
   const {user, setUser } = useContext(StoreContext)
   const history = useHistory();
 
-
+ 
   const isUserLogged = Boolean(user);
-  console.log(id)
 
 
-
-//     const boxEvenStyle = {
-//           display: "flex",
-//           flexDirection: "column",
-//           flexBasis: "40%",
-//           backgroundImage: `url(${img})`,
-// };
 
 
 
@@ -36,7 +28,7 @@ const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
           <p className={style('dateEven')}>{`Data realizacji: ${date}`}</p>
           <p className={style('describleEven')}>{describle}</p>
         </div>
-        <div style={{backgroundImage: `url(${img})`, borderRadius: '20px 20px 20px 0px'}} className={style('imageBoxEven') }>
+        <div style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 20px 0px'}} className={style('imageBoxEven') }>
          <div className={style('triangleEven')}></div>
         </div>
         
@@ -47,7 +39,7 @@ const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
     return ( 
       <li>
       <article className={style()}>
-        <div style={{backgroundImage: `url(${img})`, borderRadius: '20px 20px 0px 20px'}} className={style('imageBoxOdd')}>
+        <div style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 0px 20px'}} className={style('imageBoxOdd')}>
             <div className={style('triangleOdd')}></div>
         </div>
         <div className={style('boxOdd')}>

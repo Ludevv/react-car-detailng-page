@@ -3,7 +3,10 @@
 const carsData = [
   {
     id: 0,
-    img: "https://mediapool.bmwgroup.com/cache/P9/201803/P90295640/P90295640-the-new-bmw-m2-coup-edition-black-shadow-03-2018-2371px.jpg",
+    imgs: [
+      "https://mediapool.bmwgroup.com/cache/P9/201803/P90295640/P90295640-the-new-bmw-m2-coup-edition-black-shadow-03-2018-2371px.jpg",
+      "https://ocdn.eu/pulscms-transforms/1/j4-k9kqTURBXy9iOTBjNGQ1ZjA3NDBmZDFjMWU1NzIyY2FhODkyMzU0MC5qcGVnkpUDAjfNA_7NAj-TBc0DFM0BvIGhMAE",
+    ],
     date: "2020-01-24",
     describle:
       "W nasze ręce trafiło piękne BMW M2 Competition. Standardowy czarny lakier przykryliśmy folią 3M Satin Dark – proces ten wykonaliśmy we wszystkich wnękach aby całość prezentowała się niczym prawdziwy lakier!",
@@ -11,8 +14,10 @@ const carsData = [
   },
   {
     id: 1,
-    img:
+    imgs: [
       "https://www.mercedes-benz.pl/passengercars/mercedes-benz-cars/models/s-class/coupe-c217/amg/equipment/_jcr_content/swipeableteaserbox/par/swipeableteaser_1066808109/asset.MQ6.12.20191011065837.jpeg",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtmZ3N4NDU1b2RsajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.LI4iUF9oN2dyzcZJs5YWOpv6CS9zIYzVFj9MBFdiQ7c/image;s=1080x720",
+    ],
     date: "2020-05-15",
     describle:
       "Prezentowane państwu auto trafiło do nas w dniu odbioru z salonu. Zajęliśmy się nim w pełni kompleksowo, realizując usługi z zakresu detailingu oraz wrappingu.",
@@ -20,17 +25,22 @@ const carsData = [
   },
   {
     id: 2,
-    img:
+    imgs: [
       "https://www.autotest.sk/wp-content/uploads/2017/09/seat-leon-cupra-r-2018.jpg",
+      "dsdsadadsadas",
+    ],
     date: "2020-07-30",
+
     describle:
       "Nowy Seat Cupra Leon dotrał do nas prosto z salonu, z dokładnie określoną wizją jego wyglądu przez klienta. Jeszcze przed odebraniem z salonu samochód miał zmienić swoje oblicze dzięki folii 3M Satin Grey Aluminium.",
     title: "Seat Cupra Leon",
   },
   {
     id: 3,
-    img:
+    imgs: [
       "https://i1.wp.com/cartests.net/wp-content/uploads/2020/02/2020-volkswagen-golf-gti_main.jpg?fit=1200%2C800&ssl=1",
+      "dsadsadsdsad",
+    ],
     date: "2020-12-04",
     describle:
       "Wyjątkowy kolor lakieru Misanorot Rosse Perleffect na wyjątkowym Golfie GTI wymagał równie wyjątkowej opieki. Aby jazda nie niosła ryzyka uszkodzeń lakieru, w całości został przez nas zabezpieczony bezbarwną folią ochronną!",
@@ -38,8 +48,10 @@ const carsData = [
   },
   {
     id: 4,
-    img:
+    imgs: [
       "https://iv.pl/images/68e4d1224c24f22f4ef92042bc765476.jpg",
+      "dsadaddada",
+    ],
     date: "2021-01-24",
     describle:
       "Im wcześniej... wiadomo, tym lepiej! Mówimy oczywiście o zabezpieczeniu lakieru przed wszelkimi uszkodzeniami, jeszcze przed wyjazdem na drogi. Tym razem padło na Golfa R",
@@ -47,9 +59,8 @@ const carsData = [
   },
 ];
 
-
-
 exports.getCars = (request, response, next) => {
+  console.log(carsData);
   try {
     response.status(200).json({
       cars: carsData,
@@ -91,7 +102,7 @@ exports.getCar = (request, response, next) => {
 
 exports.postCar = (request, response, next) => {
   try {
-    const { describle, img, date, title } = request.body;
+    const { describle, imgs, date, title } = request.body;
     if (!describle || !date || !title) {
       response.status(400).json({
         message: "Nie podano wszystkich wymaganych informacji",
@@ -115,7 +126,7 @@ exports.postCar = (request, response, next) => {
       // authors: authors,
       describle,
       id: carsData.length,
-      img,
+      imgs,
       date,
       title,
     };

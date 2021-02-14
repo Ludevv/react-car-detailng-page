@@ -1,10 +1,7 @@
-
-
-
-dodać animacje
 media querrys
 
-zmodyfikowac backend do listy zdjec
-dodac obrazki inne 
+
+dodac obrazki inne
+dodac znaczniki a href
 dodac lightboxa
 dodac hovera ladnego
