@@ -1,0 +1,10 @@
+
+
+poprawić czcionki
+dodać animacje
+media querrys
+
+zmodyfikowac backend do listy zdjec
+dodac obrazki inne 
+dodac lightboxa
+dodac hovera ladnego

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 * {
     margin: 0;
@@ -35,7 +36,7 @@ h3 {
 
 a {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     transition: .3s;
 }
 
@@ -53,20 +54,10 @@ button {
     box-shadow: none;
 }
 
-
-
-
 button:hover {
     background-color: #fff;
     color: #000;
 }
-
-// i::before {
-//     color: #fff;
-//     line-height: 85px;
-//     font-size: 22px;
-//     margin-right: 20px;
-// }
 
 label {
     font-family: 'Roboto', sans-serif;

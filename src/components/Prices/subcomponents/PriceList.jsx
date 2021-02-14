@@ -11,7 +11,7 @@ const PriceList = (props) => {
   const {click, id, text, value} = props;
   return ( 
       <div onClick={()=>click(id)} className={style('hand-wash')}>
-        <span>{text}</span>{value ? <i className="fas fa-chevron-circle-up"></i> : <i className="fas fa-chevron-circle-down"></i> }
+        <span>{text}</span>{value ? <i class="fas fa-minus"></i> : <i class="fas fa-plus"></i> }
       </div>
    );
 }

@@ -1,0 +1,37 @@
+.media {
+
+  &__facebook,
+  &__instagram {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    // background-color: #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px 0 0 8px;
+
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      i {
+        font-size: 27px;
+        color: #fff;
+      }
+    }
+  }
+
+  &__facebook {
+    top: 150px;
+    background: #3b5998;
+    // background-color: rgba(62, 42, 153, 0.8);
+  }
+
+  &__instagram {
+    top: 215px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    // background-color: rgba(62, 42, 153, 0.8);
+  }
+}

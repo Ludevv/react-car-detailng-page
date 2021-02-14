@@ -1,97 +1,96 @@
 .car-card {
   margin-bottom: 30px;
   display: flex;
-  // flex-direction: column;
   background-color: #000;
   border-radius: 20px;
   list-style: none;
   position: relative;
-  height: 400px;
+  height: 380px;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
   &__boxEven {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
+    padding: 25px;
   }
-
-  &__titleEven {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  &__imageBoxEven {
-    background-position: center bottom;
-    background-size: cover;
-    background-color: red;
-    flex-basis: 60%;
-  }
-
-  &__triangleOdd {
-    position: absolute;
-    top: 0;
-    right: 40%;
-    z-index: 1;
-    width: 0;
-    height: 100%;
-    border-top: 400px solid #000;
-    border-left: 100px solid transparent;
-  }
-
-  &__triangleEven {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-top: 400px solid #000;
-    border-right: 100px solid transparent;
-  }
-
-  // &__imageEven {
-  //   display: block;
-  //   width: 100%;
-  //   height: auto;
-  //   overflow: hidden;
-  // }
-
-  &__priceEven,
-  &__describleEven {
-    margin: 10px 15px 0 15px;
-    text-align: justify;
-  }
-
 
   &__boxOdd {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
+    // background-color: red;
+    padding: 25px;
   }
 
 
+  &__titleEven,
   &__titleOdd {
+    font-family: 'Poiret One', cursive;
+    color: rgb(210, 179, 108);
+    // color: rgb(121, 101, 214);
+    font-size: 35px;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 10px;
+
   }
 
+
+  &__dateEven,
+  &__dateOdd {
+    font-style: italic;
+    color: #ccc;
+    font-size: 14px;
+    margin: 10px 15px;
+  }
+
+  &__dateOdd {
+    text-align: right;
+  }
+
+  &__describleEven,
+  &__describleOdd {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 15px 0 15px;
+    text-align: justify;
+  }
+
+
+
+
+
+
+
+  &__imageBoxEven,
   &__imageBoxOdd {
     background-position: center bottom;
     background-size: cover;
-    background-color: yellow;
     flex-basis: 60%;
   }
 
-  // &__imageOdd {
-  //   display: block;
-  //   width: 100%;
-  //   height: auto;
-  //   overflow: hidden;
-  // }
 
-  &__priceOdd,
-  &__describleOdd {
-    margin: 10px 15px 0 15px;
-    text-align: justify;
+  &__triangleEven,
+  &__triangleOdd {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    border-top: 380px solid #000;
+  }
+
+  &__triangleOdd {
+    right: 40%;
+    height: 100%;
+    border-left: 100px solid transparent;
+  }
+
+  &__triangleEven {
+    left: 40%;
+    height: 0;
+    border-right: 100px solid transparent;
   }
 }

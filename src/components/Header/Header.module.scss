@@ -26,8 +26,8 @@
         color: #fff;
         text-align: center;
         z-index: 2;
-        font-family: 'Mulish',sans-serif;
-        
+        font-family: 'Lexend Deca',sans-serif;
+
     }
 
     // &__underline {
@@ -58,16 +58,24 @@
     }
 
     &__item {
-        line-height: 85px;
+        // line-height: 85px;
         margin: 0 20px;
 
     }
 
     &__link {
+        margin-top: 32px;
+        padding-bottom: 3px;
+        display: block;
         text-transform: uppercase;
         text-decoration: none;
         color: #fff;
         font-family: 'Rubik', sans-serif;
+        border-bottom: 2px solid black;
+    }
+
+    &__link.active {
+        border-bottom: 2px solid rgb(62, 42, 153);
     }
 
     &__link:hover {

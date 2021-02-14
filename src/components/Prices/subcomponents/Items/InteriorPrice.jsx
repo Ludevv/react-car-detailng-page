@@ -52,8 +52,6 @@ const InteriorPrice = () => {
           <li>Oczyszczenie podsufitki,</li>
           <li>Pranie foteli,</li>
           <li>Czyszczenie deski rozdzielczej i plastików wewnątrz,</li>
-          <li>Czyszczenie deski rozdzielczej i plastików wewnątrz,</li>
-          <li>Czyszczenie deski rozdzielczej i plastików wewnątrz,</li>
           <li>Mycie szyb zarówno wewnątrz, jak i na zewnątrz.</li>
         
         </ul>

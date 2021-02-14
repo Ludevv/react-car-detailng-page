@@ -33,7 +33,7 @@ const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
       <article className={style()}>
         <div className={style('boxEven')}>
           <h3 className={style('titleEven')}>{title}</h3>
-          <p className={style('priceEven')}>{`Data realizacji: ${date}`}</p>
+          <p className={style('dateEven')}>{`Data realizacji: ${date}`}</p>
           <p className={style('describleEven')}>{describle}</p>
         </div>
         <div style={{backgroundImage: `url(${img})`, borderRadius: '20px 20px 20px 0px'}} className={style('imageBoxEven') }>
@@ -52,7 +52,7 @@ const Car = ({ id, img, isUserContext = false, date, describle, title}) => {
         </div>
         <div className={style('boxOdd')}>
           <h3 className={style('titleOdd')}>{title}</h3>
-          <p className={style('priceOdd')}>{`Data realizacji: ${date}`}</p>
+          <p className={style('dateOdd')}>{`Data realizacji: ${date}`}</p>
           <p className={style('describleOdd')}>{describle}</p>
         </div>
  

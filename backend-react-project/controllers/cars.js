@@ -3,47 +3,47 @@
 const carsData = [
   {
     id: 0,
-    img: "https://iv.pl/images/9eaf155188c08444c34ff16519448f32.jpg",
+    img: "https://mediapool.bmwgroup.com/cache/P9/201803/P90295640/P90295640-the-new-bmw-m2-coup-edition-black-shadow-03-2018-2371px.jpg",
     date: "2020-01-24",
     describle:
-      "Zabezpieczamy lakier specjalną powłoką ceramiczną OptiCoat. Dzięki temu nie tylko świetnie wygląda, ale jest także odporny na uszkodzenia. Zobacz, jak lśnią auta, którymi do tej pory się zajęliśmy.",
-    title: "Ford Focus RS",
+      "W nasze ręce trafiło piękne BMW M2 Competition. Standardowy czarny lakier przykryliśmy folią 3M Satin Dark – proces ten wykonaliśmy we wszystkich wnękach aby całość prezentowała się niczym prawdziwy lakier!",
+    title: "BMW M2 Competition",
   },
   {
     id: 1,
     img:
-      "https://i.wpimg.pl/730x0/m.autokult.pl/ford-mustang-mach-1-2021-a689162.jpg",
+      "https://www.mercedes-benz.pl/passengercars/mercedes-benz-cars/models/s-class/coupe-c217/amg/equipment/_jcr_content/swipeableteaserbox/par/swipeableteaser_1066808109/asset.MQ6.12.20191011065837.jpeg",
     date: "2020-05-15",
     describle:
-      "Renowacja lakieru to jak operacja plastyczna dla Twojego auta. Obejrzyj samochody naszych klientów przed i po odświeżeniu. Jak z salonu, prawda?",
-    title: "Ford Mustang",
+      "Prezentowane państwu auto trafiło do nas w dniu odbioru z salonu. Zajęliśmy się nim w pełni kompleksowo, realizując usługi z zakresu detailingu oraz wrappingu.",
+    title: "Mercedes-AMG S 63",
   },
   {
     id: 2,
     img:
-      "https://maxtondesign.pl/pol_pl_Splitter-Przedni-VW-Golf-7-R-Polift-V-3-965_2.jpg",
+      "https://www.autotest.sk/wp-content/uploads/2017/09/seat-leon-cupra-r-2018.jpg",
     date: "2020-07-30",
     describle:
-      "Zabezpieczamy lakier specjalną powłoką ceramiczną OptiCoat. Dzięki temu nie tylko świetnie wygląda, ale jest także odporny na uszkodzenia. Zobacz, jak lśnią auta, którymi do tej pory się zajęliśmy.",
-    title: "VW Golf R",
+      "Nowy Seat Cupra Leon dotrał do nas prosto z salonu, z dokładnie określoną wizją jego wyglądu przez klienta. Jeszcze przed odebraniem z salonu samochód miał zmienić swoje oblicze dzięki folii 3M Satin Grey Aluminium.",
+    title: "Seat Cupra Leon",
   },
   {
     id: 3,
     img:
-      "https://www.tuningblog.eu/wp-content/uploads/2019/09/BB-VW-Golf-VII-GTI-TCR-Tuning-2019-3.jpg",
+      "https://i1.wp.com/cartests.net/wp-content/uploads/2020/02/2020-volkswagen-golf-gti_main.jpg?fit=1200%2C800&ssl=1",
     date: "2020-12-04",
     describle:
-      "Zabezpieczamy lakier specjalną powłoką ceramiczną OptiCoat. Dzięki temu nie tylko świetnie wygląda, ale jest także odporny na uszkodzenia. Zobacz, jak lśnią auta, którymi do tej pory się zajęliśmy.",
+      "Wyjątkowy kolor lakieru Misanorot Rosse Perleffect na wyjątkowym Golfie GTI wymagał równie wyjątkowej opieki. Aby jazda nie niosła ryzyka uszkodzeń lakieru, w całości został przez nas zabezpieczony bezbarwną folią ochronną!",
     title: "VW Golf GTI",
   },
   {
     id: 4,
     img:
-      "https://m.autokult.pl/g5r4trgf-993bb6fc88caa6666a33520,910,500,0,0.jpg",
+      "https://iv.pl/images/68e4d1224c24f22f4ef92042bc765476.jpg",
     date: "2021-01-24",
     describle:
-      "Zabezpieczamy lakier specjalną powłoką ceramiczną OptiCoat. Dzięki temu nie tylko świetnie wygląda, ale jest także odporny na uszkodzenia. Zobacz, jak lśnią auta, którymi do tej pory się zajęliśmy.",
-    title: "Seat Cupra",
+      "Im wcześniej... wiadomo, tym lepiej! Mówimy oczywiście o zabezpieczeniu lakieru przed wszelkimi uszkodzeniami, jeszcze przed wyjazdem na drogi. Tym razem padło na Golfa R",
+    title: "VW Golf R",
   },
 ];
 
