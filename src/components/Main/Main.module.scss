@@ -3,78 +3,20 @@
   display: flex;
   flex-direction: column;
 
-  &__box {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    height: calc(100vh - 80px);
-    background-image: url("https://usercontent.one/wp/www.stdrekond.se/wp-content/uploads/2020/03/Slider-scaled.jpg");
-    // background-image: url("https://iv.pl/images/ba6543c360115dfb17fc98e340f78f7f.jpg");
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: blur(0.4px);
-    // border-bottom: 5px solid red;
-    box-shadow: inset 0px -50px 36px rgba(0, 0, 0, 1);
-  }
 
-  &__box-image {
-    position: absolute;
-    top: 65%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    height: 23vh;
-    width: 23vh;
-    background-image: url("https://iv.pl/images/2a5d693bb20a989bbd81ae5680530d4c.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-  }
-
-
-
-  &__title,
-  &__sub-title {
-    position: absolute;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 45px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 300;
-    z-index: 1;
-  }
-
-  &__title {
-    top: 87%;
-  }
-
-  &__sub-title {
-    top: 80%;
-  }
 
   &__list {
-
     list-style: none;
   }
 
-  &__find-us {
-    margin: 90px 0 50px 0;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Poiret One', cursive;
-    text-transform: uppercase;
-    color: #fff;
-  }
-
   &__our-cars {
-    margin: 100vh 0 30px 0;
+    margin: 80px 0 30px 0;
     text-align: center;
     font-size: 40px;
-    font-family: 'Rubik', cursive;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;

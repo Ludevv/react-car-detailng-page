@@ -1,4 +1,5 @@
 .media {
+  color: #fff;
 
   &__facebook,
   &__instagram {
@@ -19,6 +20,11 @@
       i {
         font-size: 27px;
         color: #fff;
+      }
+
+      i:hover {
+
+        color: #ddd;
       }
     }
   }

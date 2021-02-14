@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import bemCssModules from 'bem-css-modules'
 import Car from '../Car/Car'
-import Contact from '../Contact/Contact'
-import Prices from '../Prices/Prices'
+import HeadPage from './subcomponents/HeadPage'
+import AboutUs from './subcomponents/AboutUs'
 
 
 import { default as MainStyles} from './Main.module.scss'
@@ -19,15 +19,14 @@ const Main = () => {
 
   return ( 
     <section className={style()}>
-      <div className={style('box')}> </div>
-      <div className={style('box-image')}></div>
-      <h2 className={style('sub-title')}>Skrzypczyński</h2>
-      <h1 className={style('title')}>AUTOManufaktura</h1>
+      <HeadPage/>
+      <AboutUs/>
+
   
-      <h3 className={style('our-cars')}>realizacje</h3>
-      <ul className={style('list')}>
+      {/* <h3 className={style('our-cars')}>realizacje</h3> */}
+      {/* <ul className={style('list')}>
         {carsElements}
-      </ul>
+      </ul> */}
       {/* <Prices/>
       <h3 className={style('find-us')}>kontakt</h3>
       <Contact/> */}

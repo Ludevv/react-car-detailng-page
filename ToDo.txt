@@ -1,6 +1,6 @@
 
 
-poprawić czcionki
+
 dodać animacje
 media querrys
 
