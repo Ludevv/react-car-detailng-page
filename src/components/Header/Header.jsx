@@ -19,6 +19,7 @@ const list = [
 
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMobileMenu, setIsMobileMenu] = useState(false);
 
     const { user, setUser } = useContext(StoreContext);
 
@@ -54,6 +55,15 @@ const Header = () => {
             {/* <i class="fab fa-facebook"></i>
             <i class="fab fa-instagram"></i> */}
             <button className={style('button')} onClick={handleOnClick}>{setProperlyLabel}</button>
+            {isMobileMenu ?  <i  onClick={()=> setIsMobileMenu(!isMobileMenu)} className="fas fa-times"></i> : <i onClick={()=> setIsMobileMenu(!isMobileMenu)} className="fas fa-bars"></i>}
+            
+           
+
+            {isMobileMenu ? (  <aside className={style('mobile-menu')}>
+                <ul className={style('mobile-list')}>{menu} {adminMenuComponent}</ul>
+                <button className={style('mobile-button')} onClick={handleOnClick}>{setProperlyLabel}</button>
+            </aside>) : null}
+          
             
             <LoginForm handleOnClose={handleOnClose} isModalOpen={isModalOpen}/>
         </header>
