@@ -5,7 +5,8 @@ const carsData = [
     id: 0,
     imgs: [
       "https://mediapool.bmwgroup.com/cache/P9/201803/P90295640/P90295640-the-new-bmw-m2-coup-edition-black-shadow-03-2018-2371px.jpg",
-      "https://ocdn.eu/pulscms-transforms/1/j4-k9kqTURBXy9iOTBjNGQ1ZjA3NDBmZDFjMWU1NzIyY2FhODkyMzU0MC5qcGVnkpUDAjfNA_7NAj-TBc0DFM0BvIGhMAE",
+      "https://2p2bboli8d61fqhjiqzb8p1a-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/bmw_m2_black_shadow-5.jpg",
+      "https://www.bmw.pl/content/dam/bmw/common/all-models/m-series/m2-coupe/2019/highlights/bmw-m2-competition-highlights-m2-competition-mosaic-gallery-desktop-04.jpg",
     ],
     date: "2020-01-24",
     describle:
@@ -16,7 +17,8 @@ const carsData = [
     id: 1,
     imgs: [
       "https://www.mercedes-benz.pl/passengercars/mercedes-benz-cars/models/s-class/coupe-c217/amg/equipment/_jcr_content/swipeableteaserbox/par/swipeableteaser_1066808109/asset.MQ6.12.20191011065837.jpeg",
-      "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtmZ3N4NDU1b2RsajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.LI4iUF9oN2dyzcZJs5YWOpv6CS9zIYzVFj9MBFdiQ7c/image;s=1080x720",
+      "https://www.mercedes-benz.pl/passengercars/mercedes-benz-cars/models/amg-gt/4-door-coupe-x290/design/model-comparison/_jcr_content/comparisonslider/par/comparisonslide/interiorImage.MQ6.12.20190711094333.jpeg",
+      "https://i.iplsc.com/mercedes-amg-gt-63-s-4matic-4door-coupe-edition-1/0007CKTZAD1295YG-C125-F4.jpg",
     ],
     date: "2020-05-15",
     describle:
@@ -27,7 +29,8 @@ const carsData = [
     id: 2,
     imgs: [
       "https://www.autotest.sk/wp-content/uploads/2017/09/seat-leon-cupra-r-2018.jpg",
-      "dsdsadadsadas",
+      "https://car-images.bauersecure.com/pagefiles/75454/seat_leon_cuprar_11.jpg",
+      "https://motofilm.pl/wp-content/uploads/2020/02/New-Cupra-Leon-5.jpg",
     ],
     date: "2020-07-30",
 
@@ -39,7 +42,8 @@ const carsData = [
     id: 3,
     imgs: [
       "https://i1.wp.com/cartests.net/wp-content/uploads/2020/02/2020-volkswagen-golf-gti_main.jpg?fit=1200%2C800&ssl=1",
-      "dsadsadsdsad",
+      "https://carmag.co.za/upload/articles/2020/08/8gti.jpg",
+      "https://wokolmotoryzacji.pl/wp-content/uploads/2020/02/2020-volkswagen-golf-gti-12.jpg",
     ],
     date: "2020-12-04",
     describle:
@@ -50,7 +54,8 @@ const carsData = [
     id: 4,
     imgs: [
       "https://iv.pl/images/68e4d1224c24f22f4ef92042bc765476.jpg",
-      "dsadaddada",
+      "https://motofilm.pl/wp-content/uploads/2020/11/Volkswagen-Golf-R-2021-2.jpg",
+      "https://motofilm.pl/wp-content/uploads/2020/11/Volkswagen-Golf-R-2021-6.jpg",
     ],
     date: "2021-01-24",
     describle:
@@ -60,7 +65,6 @@ const carsData = [
 ];
 
 exports.getCars = (request, response, next) => {
-  console.log(carsData);
   try {
     response.status(200).json({
       cars: carsData,
@@ -182,7 +186,8 @@ exports.putCar = (request, response, next) => {
 exports.deleteCar = (request, response, next) => {
   try {
     const { id } = request.params;
-    const indexCarToDelete = carsData.findIndex((car) => car.id === id);
+
+    const indexCarToDelete = carsData.findIndex((car) => car.id == id);
 
     if (indexCarToDelete === -1) {
       response.status(404).json({

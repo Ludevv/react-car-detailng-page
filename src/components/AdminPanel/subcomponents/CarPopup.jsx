@@ -71,13 +71,13 @@ const CarPopup = ({
 
   const deleteImg = event => {
     const imgToDelete = event.target.dataset.img;
-    setFromImgs(prev => prev.filter(img => img !== imgToDelete))
+    setFormImgs(prev => prev.filter(img => img !== imgToDelete))
   }
 
   const imgsElements = formImgs.map(img => (
     <li key={img}>
       <p>{img}</p>
-      <button data-img={img} onClick={deleteImg}>Usuń</button>
+      <button className={style('button')} data-img={img} onClick={deleteImg}>Usuń</button>
     </li>
   ))
 
@@ -109,7 +109,7 @@ const CarPopup = ({
               value={formImg}
               onChange={handleOnChagneImg}
               />
-              <button onClick={addImg}>Dodaj zdjęcie</button>
+              <button className={style('button')} onClick={addImg}>Dodaj zdjęcie</button>
             </label>
           </div>
           <div className={style('form-row')}>
@@ -140,7 +140,7 @@ const CarPopup = ({
           <button className={style('button')} onClick={hidePopup} type="button">Anuluj</button>
         </form>
         <p>Lista zdjęć:</p>
-        <ul>
+        <ul className={style('list')}>
           {imgsElements}
         </ul>
       </div>

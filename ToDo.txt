@@ -1,7 +1,0 @@
-media querrys
-
-
-dodac obrazki inne
-dodac znaczniki a href
-dodac lightboxa
-dodac hovera ladnego
