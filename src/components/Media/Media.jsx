@@ -9,13 +9,13 @@ const Media = () => {
   return ( 
     <div className={style()}>
       <div className={style('facebook')}>
-        <a href="https://www.facebook.com/AUTOManufaktura">
+        <a href="https://www.facebook.com/AUTOManufaktura" target="_blank">
           <i className="fab fa-facebook"></i>
         </a>
       </div>
 
       <div className={style('instagram')}>
-        <a href="https://www.instagram.com/automanufaktura_skrzypczynski/">
+        <a href="https://www.instagram.com/automanufaktura_skrzypczynski/" target="_blank">
           <i className="fab fa-instagram"></i>
         </a>
       </div>

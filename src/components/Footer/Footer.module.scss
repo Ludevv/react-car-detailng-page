@@ -4,14 +4,27 @@
   margin: 5px auto 0 auto;
   padding: 15px;
 
-  &__page-map {
+  @media (max-width: 640px) {
+    padding: 25px;
+    flex-wrap: wrap;
+  }
 
+  &__page-map {
     flex-basis: 25%;
+
+    @media (max-width: 640px) {
+      flex-basis: 60%;
+    }
 
     p {
       font-size: 17px;
       text-transform: uppercase;
       margin-bottom: 15px;
+
+      @media (max-width: 640px) {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
 
       div {
         margin: 0 6px -6px -15px;
@@ -38,20 +51,35 @@
       color: #000;
       letter-spacing: 0.5px;
       text-decoration: none;
+
+      @media (max-width:640px) {
+        font-size: 15px;
+      }
     }
 
     a:hover {
       color: #bbb;
     }
+
+
   }
 
   &__media {
     flex-basis: 25%;
 
+    @media (max-width:640px) {
+      flex-basis: 40%;
+    }
+
     p {
       font-size: 17px;
       text-transform: uppercase;
       margin-bottom: 15px;
+
+      @media (max-width:640px) {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
 
       div {
         margin: 0 6px -6px -15px;
@@ -66,6 +94,9 @@
       color: #000;
       text-decoration: none;
 
+      @media (max-width:640px) {
+        font-size: 15px;
+      }
     }
 
     a:hover {
@@ -79,6 +110,10 @@
       transition: .2s;
       margin-bottom: 10px;
       font-size: 17px;
+
+      @media (max-width:640px) {
+        font-size: 15px;
+      }
     }
 
     i span {
@@ -95,12 +130,22 @@
   &__contact {
     flex-basis: 25%;
 
+    @media (max-width:640px) {
+      flex-basis: 50%;
+    }
+
     h5 {
       font-size: 17px;
       text-transform: uppercase;
       margin-bottom: 13px;
       font-family: 'Rubik', sans-serif;
       font-weight: 300;
+
+      @media (max-width:640px) {
+        font-size: 17px;
+        margin-bottom: 10px;
+        margin-top: 27px;
+      }
 
       div {
         margin: 0 6px -6px -15px;
@@ -121,11 +166,21 @@
       font-weight: 300;
       color: #000;
       text-decoration: none;
+
+      @media (max-width:640px) {
+        font-size: 15px;
+      }
     }
 
     .address {
       margin-bottom: 20px;
+
+      @media (max-width:640px) {
+        margin-bottom: 10px;
+      }
     }
+
+
 
     a:hover {
       color: #bbb;
@@ -135,6 +190,10 @@
 
   &__logo {
     width: 25%;
+
+    @media (max-width:640px) {
+      flex-basis: 50%;
+    }
 
 
     div {
@@ -154,7 +213,13 @@
       width: 100%;
       text-align: center;
       font-family: 'Rubik', sans-serif;
+
+      @media (max-width:640px) {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
     }
+
   }
 }
 

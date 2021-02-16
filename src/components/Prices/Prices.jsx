@@ -11,7 +11,7 @@ import { default as PricesStyles} from './Prices.module.scss'
 
 const style = bemCssModules(PricesStyles)
 
-const texts = ["myjna ręczna", "powłoki zabezpieczające", "renowacja lakieru", "woski","pielęgnacja i zabezpieczenie wnętrza"];
+const texts = ["myjna ręczna", "powłoki zabezpieczające", "renowacja lakieru", "woski","pielęgnacja wnętrza"];
 
 
 const Prices = () => {
@@ -49,7 +49,7 @@ const Prices = () => {
       {paintRestoration ? <PaintRestorationPrice/> : null}
       <PriceList id={"4"} value={wax} text={"woski"} click={handleClick}/>
       {wax ? <WaxPrice/> : null}
-      <PriceList id={"5"} value={interior} text={"pielęgnacja i zabezpieczenie wnętrza"} click={handleClick}/>
+      <PriceList id={"5"} value={interior} text={"pielęgnacja wnętrza"} click={handleClick}/>
       {interior ? <InteriorPrice/> : null}
       
     </section>

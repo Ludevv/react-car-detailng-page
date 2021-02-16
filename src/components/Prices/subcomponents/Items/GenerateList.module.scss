@@ -11,15 +11,27 @@
 
   &__name {
     flex-basis: 80%;
-    margin-right: 20px
+    margin-right: 20px;
+
+    @media (max-width: 580px) {
+      flex-basis: 70%;
+    }
   }
 
   &__time {
     flex-basis: 10%;
+
+    @media (max-width: 580px) {
+      flex-basis: 15%;
+    }
   }
 
   &__price {
     flex-basis: 10%;
+
+    @media (max-width: 580px) {
+      flex-basis: 15%;
+    }
   }
 
 }
