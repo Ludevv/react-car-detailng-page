@@ -28,9 +28,9 @@ const Car = ({ id, imgs, isUserContext = false, date, describle, title}) => {
           <p className={style('describleEven')}>{describle}</p>
           <p className={style('dateEven')}>{`Data realizacji: ${date}`}</p>
         </div>
-        <div  style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 20px 0px'}} className={style('imageBoxEven') }>
+        <div  style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 0px 0px'}} className={style('imageBoxEven') }>
           <div onClick={() => setIsOpen(true)} className={style('hover')}></div>
-         <div className={style('triangleEven')}></div>
+         <div className={style('triangleEvenDesktop')}></div>
         </div>
 
         {isOpen && (
@@ -51,9 +51,9 @@ const Car = ({ id, imgs, isUserContext = false, date, describle, title}) => {
     return ( 
       <li>
       <article className={style()}>
-        <div style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 0px 20px'}} className={style('imageBoxOdd')}>
+        <div style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 0px 20px'}} className={style('imageBoxOddDesktop')}>
           <div  onClick={() => setIsOpen(true)} className={style('hover')}></div>
-            <div className={style('triangleOdd')}></div>
+            <div className={style('triangleOddDesktop')}></div>
         </div>
 
         {isOpen && (
@@ -66,11 +66,15 @@ const Car = ({ id, imgs, isUserContext = false, date, describle, title}) => {
             onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % imgs.length)}
           />
         )}
+        
 
         <div className={style('boxOdd')}>
           <h3 className={style('titleOdd')}>{title}</h3>
           <p className={style('describleOdd')}>{describle}</p>
           <p className={style('dateOdd')}>{`Data realizacji: ${date}`}</p>
+        </div>
+        <div style={{backgroundImage: `url(${imgs[0]})`, borderRadius: '20px 20px 0px 0px'}} className={style('imageBoxOddMobile')}>
+          <div  onClick={() => setIsOpen(true)} className={style('hover')}></div>
         </div>
       </article>
       </li>

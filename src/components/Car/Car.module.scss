@@ -11,9 +11,14 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    height: 550px;
+  }
+
   @media (max-width: 680px) {
     flex-direction: column-reverse;
-    height: 600px;
+    height: 500px;
   }
 
   &__boxEven {
@@ -22,6 +27,15 @@
     flex-basis: 40%;
     padding: 25px;
 
+    @media (max-width: 1000px) {
+      flex-basis: 30%;
+      padding: 15px;
+    }
+
+    @media (max-width: 680px) {
+      flex-basis: 50%;
+      padding: 15px;
+    }
   }
 
   &__boxOdd {
@@ -31,6 +45,13 @@
     // background-color: red;
     padding: 25px;
 
+    @media (max-width: 1000px) {
+      flex-basis: 30%;
+    }
+
+    @media (max-width: 680px) {
+      flex-basis: 50%;
+    }
 
 
   }
@@ -47,6 +68,7 @@
     margin-top: 10px;
 
     @media (max-width: 1111px) {
+      margin-top: 0px;
       font-size: 25px;
     }
 
@@ -62,6 +84,7 @@
 
     @media (max-width: 1111px) {
       font-size: 12px;
+      margin: 10px 0 0 0;
     }
   }
 
@@ -74,6 +97,7 @@
 
     @media (max-width: 1111px) {
       font-size: 16px;
+      margin: 0;
     }
 
 
@@ -81,20 +105,56 @@
 
 
 
+  &__imageBoxEven {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    flex-basis: 60%;
+
+
+    @media (max-width: 1000px) {
+
+      flex-basis: 70%;
+    }
+
+    @media (max-width: 680px) {
+
+      background-position: center center;
+    }
+
+  }
 
 
 
-
-  &__imageBoxEven,
-  &__imageBoxOdd {
+  &__imageBoxOddDesktop {
 
     background-position: center bottom;
     background-size: cover;
     flex-basis: 60%;
 
-    @media (max-width: 680px) {
-      flex-basis: 300px;
+    @media (max-width: 1000px) {
+      display: none;
+
     }
+  }
+
+  &__imageBoxOddMobile {
+    position: relative;
+    display: none;
+    background-position: center center;
+    background-size: cover;
+    flex-basis: 60%;
+
+    @media (max-width: 1000px) {
+      flex-basis: 70%;
+      display: block;
+
+    }
+
+    @media (max-width: 680px) {
+      flex-basis: 60%;
+    }
+
   }
 
   &__hover {
@@ -110,27 +170,27 @@
   }
 
 
-  &__triangleEven,
-  &__triangleOdd {
-
-
-    display: none;
-
+  &__triangleEvenDesktop,
+  &__triangleOddDesktop {
     position: absolute;
     top: 0;
     z-index: 1;
     width: 0;
     border-top: 380px solid #000;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
-  &__triangleOdd {
+  &__triangleOddDesktop {
     right: calc(40% - 1px);
     height: 100%;
     border-left: 100px solid transparent;
   }
 
-  &__triangleEven {
-    left: calc(40% - 1px);
+  &__triangleEvenDesktop {
+    left: -1px;
     height: 0;
     border-right: 100px solid transparent;
   }
