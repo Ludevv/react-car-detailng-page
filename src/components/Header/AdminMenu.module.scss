@@ -2,10 +2,49 @@
   line-height: 85px;
   margin: 0 20px;
 
+  @media (max-width: 1290px) {
+    line-height: 1;
+    text-align: center;
+  }
+
   &__link {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+
+    @media (max-width: 1290px) {
+      line-height: 1;
+      display: block;
+      text-align: center;
+      font-family: 'Rubik', sans-serif;
+      border-bottom: 2px solid black;
+
+
+      margin: 28px auto 0 auto;
+      font-size: 18px;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 35px auto 0 auto;
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 25px auto 0 auto;
+      font-size: 20px;
+    }
+
+    @media (max-width: 823px) and (orientation: landscape) {
+      margin: 20px auto 0 auto;
+      font-size: 20px;
+    }
+
+    @media (max-width: 568px) and (orientation: landscape) {
+      margin: 10px auto 0 auto;
+      font-size: 18px;
+    }
   }
 
   &__link:hover {

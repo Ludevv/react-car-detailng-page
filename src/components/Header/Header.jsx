@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import bemCssModules from 'bem-css-modules'
 import { NavLink } from "react-router-dom";
 
@@ -40,8 +40,11 @@ const Header = () => {
             setUser(null);
         } else {
             setIsModalOpen(true);
+            // setIsModalOpen(false);
         }
     }
+
+    
 
 
     const setProperlyLabel = Boolean(user) ? 'Wyloguj się' : 'Zaloguj się';
