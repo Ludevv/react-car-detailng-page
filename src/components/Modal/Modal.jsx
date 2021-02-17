@@ -1,14 +1,21 @@
 import React, { Children, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import bemCssModules from 'bem-css-modules';
+import dialogPolyfill from 'dialog-polyfill'
+// import 'dialog-polyfill/dialog-polyfill.css';
+
 
 import { default as ModalStyles } from './Modal.module.scss'
 
 const style = bemCssModules(ModalStyles)
 
+
 const Modal = ({children, handleOnClose, isOpen, shouldBeCloseOnOutsideClick}) => {
     const modalRef = useRef(null);
     const previousActiveElement = useRef(null);
+
+
+
 
     useEffect(() => {
         if(!modalRef.current) {
@@ -46,6 +53,11 @@ const Modal = ({children, handleOnClose, isOpen, shouldBeCloseOnOutsideClick}) =
             handleOnClose();
         }
     }
+
+      useEffect(() => {
+    var dialog = document.querySelector('dialog');
+     dialogPolyfill.registerDialog(dialog)
+  }, [])
 
     return ReactDOM.createPortal(( 
         <dialog className={style()} ref={modalRef} onClick={handleOutsideClick}>
