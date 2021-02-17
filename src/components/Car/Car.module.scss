@@ -13,7 +13,7 @@
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
-    height: 550px;
+    height: 580px;
   }
 
   @media (max-width: 680px) {
@@ -50,6 +50,7 @@
 
     @media (max-width: 680px) {
       flex-basis: 50%;
+      padding: 15px;
     }
 
 
@@ -113,6 +114,7 @@
 
     @media (max-width: 680px) {
       background-position: center center;
+      flex-basis: 50%;
     }
   }
 
