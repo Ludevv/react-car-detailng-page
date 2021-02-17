@@ -5,7 +5,7 @@ import Cars from '../Cars/Cars'
 import Main from '../Main/Main'
 import Prices from '../Prices/Prices'
 import Contact from '../Contact/Contact'
-// import UserCars from '../UserCars/UserCars'
+import ScrollToTop from './ScrollToTop'
 import AdminPanel from '../AdminPanel/AdminPanel'
 
 import { default as ContentStyles} from './Content.module.scss'
@@ -22,6 +22,7 @@ const Content = () => {
 
   return ( 
     <main className={style()}>
+      <ScrollToTop />
       <Switch>
         <Route exact path="/" render={()=> <Main/>}/>
         <Route exact path="/realizacje" render={()=> <Cars/>}/>
