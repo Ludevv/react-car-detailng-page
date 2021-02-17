@@ -31,8 +31,8 @@ module.exports = {
       {
         test: /\.(s(a|c)ss|css)$/,
         exclude: /\.module.(s(a|c)ss)$/,
-        loader: [
-          "style-loader",
+        use: [
+          MiniCssExtractPlugin.loader,
           "css-loader",
           {
             loader: "sass-loader",
@@ -47,9 +47,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.[contenthash:6].css",
+      // filename: "style.[contenthash:6].css",
+      filename: "assets/style/[name].css",
       chunkFilename: "style.[contenthash:6].css",
-      publicPath: "./",
+      // publicPath: "./",
     }),
   ],
 };
