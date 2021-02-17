@@ -127,7 +127,6 @@ exports.postCar = (request, response, next) => {
     }
 
     const newCar = {
-      // authors: authors,
       describle,
       id: carsData.length,
       imgs,

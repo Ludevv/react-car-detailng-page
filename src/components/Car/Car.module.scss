@@ -42,7 +42,6 @@
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
-    // background-color: red;
     padding: 25px;
 
     @media (max-width: 1000px) {
@@ -59,13 +58,12 @@
 
   &__titleEven,
   &__titleOdd {
-    font-family: 'Poiret One', cursive;
-    color: rgb(210, 179, 108);
-    // color: rgb(121, 101, 214);
-    font-size: 35px;
-    text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(210, 179, 108);
+    font-size: 35px;
+    text-align: center;
 
     @media (max-width: 1111px) {
       margin-top: 0px;
@@ -77,30 +75,28 @@
 
   &__dateEven,
   &__dateOdd {
+    margin: 10px 15px;
     font-style: italic;
     color: #ccc;
     font-size: 14px;
-    margin: 10px 15px;
 
     @media (max-width: 1111px) {
-      font-size: 12px;
       margin: 10px 0 0 0;
+      font-size: 12px;
     }
   }
 
   &__describleEven,
   &__describleOdd {
+    margin: 10px 15px 0 15px;
     font-size: 18px;
     line-height: 1.5;
-    margin: 10px 15px 0 15px;
     text-align: justify;
 
     @media (max-width: 1111px) {
-      font-size: 16px;
       margin: 0;
+      font-size: 16px;
     }
-
-
   }
 
 
@@ -111,30 +107,24 @@
     background-size: cover;
     flex-basis: 60%;
 
-
     @media (max-width: 1000px) {
-
       flex-basis: 70%;
     }
 
     @media (max-width: 680px) {
-
       background-position: center center;
     }
-
   }
 
 
 
   &__imageBoxOddDesktop {
-
     background-position: center bottom;
     background-size: cover;
     flex-basis: 60%;
 
     @media (max-width: 1000px) {
       display: none;
-
     }
   }
 
@@ -148,13 +138,11 @@
     @media (max-width: 1000px) {
       flex-basis: 70%;
       display: block;
-
     }
 
     @media (max-width: 680px) {
       flex-basis: 60%;
     }
-
   }
 
   &__hover {

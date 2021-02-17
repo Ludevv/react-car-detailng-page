@@ -2,18 +2,11 @@ const { carsData } = require("./cars");
 
 const usersData = [
   {
-    accessLevel: 0,
-    budget: 150,
-    cars: [carsData[0].id, carsData[1].id, carsData[2].id],
-    login: "User",
-    password: "123456",
-  },
-  {
     accessLevel: 1,
     budget: 1000000,
     cars: [carsData.map((car) => car.id)],
     login: "Admin",
-    password: "******",
+    password: "123456",
   },
 ];
 
