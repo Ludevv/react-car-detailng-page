@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://react-car-detailng-backend.herokuapp.com/",
   validateStatus: false,
 });
 

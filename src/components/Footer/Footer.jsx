@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
       <div className={style('logo')}>
-        <div><img src="https://sn2files.storage.live.com/y4p4qQKUDKcEmvuxvlliATntRoXMPso1Dy3T_kcWfF676hGLXQNLpuNnYhlRnaK64iVlG1Bq4lRBdW4VH9cj0TEhBNtxE0p4DaZLCtUGJDptY1-pGb7RRjpD4PMPhn-RaV5UPB2Qoudq94AMLzZVs4DP7JZe5Uovw8k1KH1CUbXglYE6HynBSx7vOxUZ1KMI5qTgeu-FOjvhUUDvuj42r8lThypT5-xl4MyKWvvKnYsAxw/logoFooter.png?psid=1&width=158&height=150" alt="logo"/></div>
+        <div><img src="https://i.ibb.co/j68YLMY/logo-Footer.png" alt="logo"/></div>
         <span>AUTOManufaktura</span>
         <span>Skrzypczyński</span>
       </div>
