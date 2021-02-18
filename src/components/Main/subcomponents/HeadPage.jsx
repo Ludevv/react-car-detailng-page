@@ -8,7 +8,9 @@ const style = bemCssModules(HeadPageStyles)
 const HeadPage = () => {
   return ( 
     <>
-      <div className={style('box')}> </div>
+      <div className={style('box')}> 
+        {/* <img src="https://i.ibb.co/wBmBWNz/mobile.jpg" alt="bgc" /> */}
+      </div>
       <div className={style('box-image')}></div>
       <h2 className={style('sub-title')}>Skrzypczyński</h2>
       <h1 className={style('title')}>AUTOManufaktura</h1>

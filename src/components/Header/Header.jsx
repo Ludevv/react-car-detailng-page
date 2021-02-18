@@ -27,7 +27,7 @@ const Header = () => {
 
     const menu = list.map((item) => (
     <li key={item.name} className={style('item')}>
-        <NavLink className={style('link')} to={item.path} exact={item.exact ? true : false}>
+        <NavLink onClick={()=> setIsMobileMenu(!isMobileMenu)}  className={style('link')} to={item.path} exact={item.exact ? true : false}>
             {item.name}
         </NavLink>
      </li>
@@ -40,7 +40,6 @@ const Header = () => {
             setUser(null);
         } else {
             setIsModalOpen(true);
-            // setIsModalOpen(false);
         }
     }
 
@@ -52,11 +51,10 @@ const Header = () => {
     return ( 
         <header className={style()}>
             <div className={style('logo-wrapper')}></div>
-            {/* <div className={style('underline')}></div> */}
+     
             <h1 className={style('title')}>AUTOManufaktura Skrzypczyński</h1>
             <ul className={style('list')}>{menu} {adminMenuComponent}</ul>
-            {/* <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i> */}
+    
             <button className={style('button')} onClick={handleOnClick}>{setProperlyLabel}</button>
             {isMobileMenu ?  <i  onClick={()=> setIsMobileMenu(!isMobileMenu)} className="fas fa-times"></i> : <i onClick={()=> setIsMobileMenu(!isMobileMenu)} className="fas fa-bars"></i>}
             

@@ -153,10 +153,16 @@
     height: 100%;
     background-color: transparent;
     transition: .5s;
+
+
   }
 
   &__hover:hover {
     background-color: rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 414px) {
+      background-color: transparent;
+    }
   }
 
 

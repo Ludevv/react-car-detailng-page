@@ -4,7 +4,6 @@
     top: 80px;
     left: 0;
     right: 0;
-    // width: 100%;
     height: calc(100vh - 80px);
     background-image: url("https://i.ibb.co/LtQVnTm/Slider-scaled.jpg");
     background-position: center top;
@@ -12,12 +11,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(0.4px);
-    // border-bottom: 5px solid red;
     box-shadow: inset 0px -50px 36px rgba(0, 0, 0, 1);
 
-    @media (max-width: 650px) {
+    @media (max-width: 414px) {
       top: 100px;
-      background-position: 65% bottom;
+      height: calc(100vh - 100px);
+      background-position: right top;
+      background-image: url("https://i.ibb.co/JcSjNB3/dsa.jpg");
+      background-attachment: scroll;
+      filter: blur(0);
     }
   }
 
