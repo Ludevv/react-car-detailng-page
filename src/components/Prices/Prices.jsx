@@ -21,6 +21,10 @@ const Prices = () => {
   const [wax, setWax] = useState(false);
   const [interior, setInterior] = useState(false);
 
+  useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
+
   const handleClick = (id) => {
     switch (id) {
       case '1': setHandWash(!handWash)

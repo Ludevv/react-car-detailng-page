@@ -15,6 +15,10 @@ const Main = () => {
   const {cars} = useContext(StoreContext);
 
 
+  useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
+
   const carsElements = cars.map(car => <Car key={car.id} {...car}/>)
 
   return ( 

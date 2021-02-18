@@ -22,7 +22,7 @@ const Content = () => {
 
   return ( 
     <main className={style()}>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Switch>
         <Route exact path="/" render={()=> <Main/>}/>
         <Route exact path="/realizacje" render={()=> <Cars/>}/>

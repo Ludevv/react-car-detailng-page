@@ -10,7 +10,12 @@ import { StoreContext } from '../../store/StoreProvider';
 const style = bemCssModules(CarsStyles)
 
 
+
 const Cars = () => {
+
+  useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
 
   const {cars} = useContext(StoreContext);
 
