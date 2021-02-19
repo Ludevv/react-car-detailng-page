@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import bemCssModules from 'bem-css-modules'
 import Car from '../Car/Car'
 import HeadPage from './subcomponents/HeadPage'

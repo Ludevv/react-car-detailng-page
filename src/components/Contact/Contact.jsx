@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import bemCssModules from 'bem-css-modules'
 
 
@@ -8,8 +8,6 @@ import { default as ContactStyles} from './Contact.module.scss'
 const style = bemCssModules(ContactStyles)
 
 const Contact = () => {
-
-
 
 useEffect(() => {
   window.scrollTo(0, 0)

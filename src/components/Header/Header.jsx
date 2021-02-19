@@ -27,7 +27,8 @@ const Header = () => {
 
     const menu = list.map((item) => (
     <li key={item.name} className={style('item')}>
-        <NavLink onClick={()=> setIsMobileMenu(!isMobileMenu)}  className={style('link')} to={item.path} exact={item.exact ? true : false}>
+        <NavLink onClick={()=> setIsMobileMenu(!isMobileMenu)} className={style('link')} to={item.path} exact={item.exact ? true : false}>
+             
             {item.name}
         </NavLink>
      </li>
