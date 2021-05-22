@@ -12,6 +12,7 @@
 
     @media (max-width: 1290px) {
         height: 100px;
+        box-shadow: none;
     }
 
     &__logo-wrapper {
@@ -177,6 +178,7 @@
             cursor: pointer;
         }
 
+
         &__mobile-list {
             list-style: none;
             margin-top: 30px;
@@ -188,13 +190,14 @@
 
         &__mobile-menu {
             position: fixed;
-            top: 85px;
+            top: 100px;
             right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.9);
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 1);
             width: 250px;
             display: block;
             z-index: -1;
+            
 
             @media (max-width: 1024px) {
                 width: 350px;
@@ -206,6 +209,10 @@
 
 
         }
+
+
+
+
 
         &__mobile-button {
             margin: 28px auto;
