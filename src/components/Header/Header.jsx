@@ -51,8 +51,9 @@ const Header = () => {
 
     return ( 
         <header className={style()}>
-            <div className={style('logo-wrapper')}></div>
-     
+            <NavLink onClick={()=> setIsMobileMenu(!isMobileMenu)} to={"/"} exact={true}>
+                <div className={style('logo-wrapper')}></div>
+            </NavLink>
             <h1 className={style('title')}>AUTOManufaktura Skrzypczyński</h1>
             <ul className={style('list')}>{menu} {adminMenuComponent}</ul>
     

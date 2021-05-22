@@ -13,6 +13,7 @@ const App = () => (
     <>
     <StoreProvider>
         <Router>
+            <div className="background"></div>
             <Header/>
             <div className="content-wrapper">
                 <Content/>
