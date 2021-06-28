@@ -6,6 +6,7 @@ module.exports = {
     index: path(__dirname, "..", "src", "index.js"),
   },
   output: {
+    publicPath: "",
     filename: "[name].[contenthash:6].js",
     path: path(__dirname, "..", "build"),
   },

@@ -50,7 +50,7 @@ module.exports = {
       // filename: "style.[contenthash:6].css",
       filename: "assets/style/[name].css",
       chunkFilename: "style.[contenthash:6].css",
-      publicPath: "./",
+      // publicPath: "./",
     }),
   ],
 };
