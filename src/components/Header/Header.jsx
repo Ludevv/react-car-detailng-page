@@ -8,6 +8,8 @@ import { default as HeaderStyles } from './Header.module.scss'
 import LoginForm from '../LoginForm/LoginForm';
 import AdminMenu from './AdminMenu';
 
+import logo from '../../Images/logo.png'
+
 const style = bemCssModules(HeaderStyles)
 
 const list = [
@@ -44,15 +46,13 @@ const Header = () => {
         }
     }
 
-    
-
 
     const setProperlyLabel = Boolean(user) ? 'Wyloguj się' : 'Zaloguj się';
 
     return ( 
         <header className={style()}>
             <NavLink onClick={()=> isMobileMenu && setIsMobileMenu(!isMobileMenu)} to={"/"} exact={true}>
-                <div className={style('logo-wrapper')}></div>
+                <div style={{backgroundImage: `url(${logo})`}} className={style('logo-wrapper')}></div>
             </NavLink>
             <h1 className={style('title')}>AUTOManufaktura Skrzypczyński</h1>
             <ul className={style('list')}>{menu} {adminMenuComponent}</ul>

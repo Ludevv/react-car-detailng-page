@@ -1,5 +1,7 @@
 import React, {useContext, useEffect} from 'react';
 import bemCssModules from 'bem-css-modules'
+import map from '../../Images/mapa.png'
+
 
 
 
@@ -14,7 +16,7 @@ useEffect(() => {
 }, [])
 
   return ( 
-    <div className={style()}>
+    <div style={{backgroundImage: `url(${map})`}} className={style()}>
       <div className={style('box')}>
           <h5>Kontakt</h5>
           <h1>AUTOManufaktura Skrzypczyński. Przydomowa pracowania artystyczna o charakterze motoryzacyjnym</h1>
