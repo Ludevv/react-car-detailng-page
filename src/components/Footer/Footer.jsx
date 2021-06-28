@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { NavLink } from "react-router-dom";
 import bemCssModules from 'bem-css-modules'
+import logo from '../../Images/logofooter.png'
 
 
 import { default as FooterStyles} from './Footer.module.scss'
@@ -46,7 +47,7 @@ const Footer = () => {
       </div>
 
       <div className={style('logo')}>
-        <div><img src="https://i.ibb.co/ZYbnm5G/logo-Footer.png" alt="logo"/></div>
+        <div><img src={logo} alt="logo"/></div>
         <span>AUTOManufaktura</span>
         <span>Skrzypczyński</span>
       </div>
